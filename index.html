@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Responsive Login</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <h1>SPACE</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <span><i class='bx bxs-x-circle' onclick="hamburguer()"></i></span>
+        </nav>
+        <form class="formLogin">
+
+            <h2 class="titleLogin">Login - Space</h2>
+
+            <div class="inputBox" style="--j:1;">
+                <input type="text" required>
+                <label>USERNAME</label>
+                <i class='bx bx-user'></i>
+            </div>
+
+            <div class="inputBox" style="--j:2;">
+                <input type="text" required>
+                <label>PASSWORD</label>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+
+            <button type="submit" class="btnLogin">Sign in</button>
+
+            <div class="RememberForgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <span><i class='bx bx-menu' onclick="hamburguer()"></i></span>
+
+            <div class="linkMobile">
+                <p>Don't have an account? <a href="#" onclick="cadastro()">Sign Up</a></p>
+            </div>
+
+
+        </form>
+
+
+        <form class="formRegister">
+
+            <h2 class="titleRegister">Register - Space</h2>
+
+            <div class="inputBox" style="--j:1;">
+                <input type="text" required>
+                <label>USERNAME</label>
+                <i class='bx bx-user'></i>
+            </div>
+
+            <div class="inputBox" style="--j:2;">
+                <input type="text" required>
+                <label>PASSWORD</label>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+
+            <div class="inputBox" style="--i:5;">
+                <input type="text" required>
+                <label>EMAIL</label>
+                <i class='bx bx-envelope'></i>
+            </div>
+
+            <button type="submit" class="btnRegister">Sign up</button>
+
+
+            <div class="RememberForgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <span><i class='bx bx-menu' onclick="hamburguer()"></i></span>
+
+            <div class="linkMobile">
+                <p>Already have an account? <a href="#" onclick="cadastro()">Sign In</a></p>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>

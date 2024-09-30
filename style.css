@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .8s ease;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border: none;
+    outline: none;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(66, 65, 65);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    height: 667px;
+    width: 375px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 3px solid;
+}
+
+nav {
+    top: -100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 80.2%;
+    padding: 6px 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.197);
+    position: absolute;
+    backdrop-filter: blur(50px);
+    z-index: 999;
+    border: 1px solid rgba(255, 255, 255, 0.49);
+    border-radius: 20px;
+}
+
+nav h1 {
+    font-size: 2rem;
+}
+
+nav h1:hover {
+    color: rgba(137, 43, 226, 0.866);
+}
+
+nav .bxs-x-circle {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+nav ul li {
+    margin: 30px;
+    font-size: 1.5rem;
+}
+
+nav ul li a {
+    padding-bottom: 5px;
+}
+
+.hamburguer nav {
+    top: 0px;
+
+}
+
+.bxs-x-circle:hover,
+.bx-menu:hover,
+nav a:hover {
+    color: rgba(137, 43, 226, 0.582);
+    transition: .2s;
+}
+
+/* FORMS */
+
+
+form {
+    position: absolute;
+    text-align: center;
+    padding: 15px 15px;
+    margin: auto;
+    height: 667px;
+    width: 375px;
+    backdrop-filter: blur(50px);
+    border: 2px solid rgba(255, 255, 255, 0.682);
+    height: 80%;
+    width: 80%;
+    box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.277);
+    border-radius: 20px;
+
+}
+
+.cadastro .formLogin,
+.formRegister {
+    filter: blur(15px);
+    transform: translateX(150%);
+}
+
+.cadastro .formRegister {
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* TITULOS */
+
+.titleLogin {
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    bottom: 5px;
+}
+
+/* INPUTBOX */
+
+.inputBox {
+    position: relative;
+    margin: 20px 0;
+}
+
+/* INPUTS & BUTTONS*/
+
+.inputBox input,
+form button {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.079);
+}
+
+.inputBox label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.inputBox input:focus~label,
+.inputBox input:valid~label {
+    font-size: 0.5rem;
+    top: -11px;
+}
+
+.inputBox input:focus~i,
+.inputBox input:valid~i {
+    font-size: 0.8rem;
+    top: -25%;
+}
+
+.inputBox i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+form button:hover,
+label:hover {
+    letter-spacing: .6px;
+}
+
+form button:hover,
+.inputBox input:hover {
+    background-color: rgb(45, 2, 86);
+}
+
+/* REMEMBER-FORGOT */
+
+.RememberForgot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 0.75rem;
+}
+
+.RememberForgot a:hover {
+    border: none;
+    text-decoration: underline;
+    letter-spacing: .5px;
+    transition: .4s;
+}
+
+
+/* HAMBURGUER-MENU */
+
+form span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(95, 0, 184, 0);
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+/* REGISTER LINK */
+
+.linkMobile {
+    margin-top: 50px;
+    width: 100%;
+    font-size: .8rem;
+}
+
+
+.cadastro .linkMobile {
+    margin-top: 15px;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 667px) and (min-height: 375px) {
+    .wrapper {
+        width: 667px;
+        height: 375px;
+    }
+
+    form {
+        width: 667px;
+        height: 375px;
+    }
+
+    .bx-menu {
+        position: relative;
+        top: -80px;
+    }
+    
+    .cadastro .formRegister .bx-menu{
+        position: absolute;
+        top: 15px;
+        font-size: 2.2rem;
+        right: 75px;
+    }
+
+    .cadastro .formRegister .linkMobile{
+        top: -90px;
+    }
+
+    .linkMobile{
+        margin-top: 0px;
+        position: relative;
+        top: -65px;
+    }
+
+
+    nav {
+        top: -110%;
+        padding: 0 0;
+    }
+
+    .hamburguer nav {
+        top: 0px;
+    
+    }
+
+    nav ul li {
+        margin: 13px;  
+    }
+
+}
+
+
+.remyzinho {
+    transition: 2s;
+    font-size: 8rem;
+}
