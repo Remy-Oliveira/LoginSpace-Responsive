@@ -221,8 +221,9 @@ form span {
 /* REGISTER LINK */
 
 .linkMobile {
+    margin: auto;
     margin-top: 50px;
-    width: 100%;
+    width: 40%;
     font-size: .8rem;
 }
 
